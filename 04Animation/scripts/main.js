@@ -9,7 +9,7 @@ function spin(){
 	var axis = [x,y,z];
 
 	for (i = 0; i < axis.length; i++) { 
-  		myOtherBox.object3D.rotation.[axis[i]] -= rotationSpeed;
+  		myOtherBox.object3D.rotation.axis[i] -= rotationSpeed;
 	}
 
 	// myOtherBox.object3D.rotation.x -= rotationSpeed;
