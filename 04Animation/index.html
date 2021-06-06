@@ -23,10 +23,15 @@
         material="src: #wood"
         shadow 
         animation="property: rotation; 
-                   to: 90 360 180; 
-                   dur: 2000; 
+                   to: 0 360 180; 
+                   dur: 1000; 
                    easing: linear; 
-                   loop: true" >
+                   loop: true" 
+        animation__2="property: position
+                      to: -1 -1 0;
+                      dur: 2000;
+                      easing: ease-in-out;
+                      loop: true">
       </a-box>
       <a-box id="myOtherBox" 
         position="2 1 -3" 
