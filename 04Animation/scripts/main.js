@@ -19,7 +19,7 @@ function spin(){
 	rotationSpeed += 0.49;
 
 	for (i = 0; i < axis.length; i++) { 
-  		myOtherBox.object3D.rotation.[axis[i]] -= rotationSpeed;
+  		myOtherBox.object3D.rotation.axis[i] -= rotationSpeed;
 	}
 
 	rotationSpeed -= 0.49;
