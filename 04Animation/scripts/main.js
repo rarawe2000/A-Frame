@@ -4,6 +4,8 @@ var widthIncrease = 0.1;
 var positionChangeY = 0.01;
 
 var myOtherBox = document.getElementById('myOtherBox');
+var myBox = document.getElementById('myBox');
+
 
 function spin(){
 	myOtherBox.object3D.rotation.x -= rotationSpeed;
@@ -13,6 +15,7 @@ function spin(){
 	myOtherBox.object3D.width += widthIncrease;
 
 	myOtherBox.object3D.position.y += positionChangeY;
+	myBox.object3D.position.y += positionChangeY;
 
 
 	if (myOtherBox.object3D.rotation.x <= -5) {
