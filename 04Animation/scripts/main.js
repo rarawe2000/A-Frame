@@ -79,7 +79,7 @@ function spin(){
 		widthIncrease = 0.1;
 	}
 
-	if (myOtherBox.object3D.position.y >= -3 && yOtherBox.object3D.position.y <= 2) {
+	if (myOtherBox.object3D.position.y >= -3 && myOtherBox.object3D.position.y <= 2) {
 		positionChangeY = 0.01;
 	} else {
 		positionChangeY -= 0.01;
