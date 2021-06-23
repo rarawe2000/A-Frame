@@ -77,9 +77,10 @@ function spin(){
 	if (myOtherBox.object3D.rotation.x <= -180) {
 		rotationSpeed = 0.4;
 		widthIncrease = 0.1;
+		myOtherBox.object3D.rotation.x = 0;
 	}
 
-	if (myOtherBox.object3D.position.y >= -3 && myOtherBox.object3D.position.y <= 2) {
+	if (myOtherBox.object3D.position.y >= -3 && myOtherBox.object3D.position.y <= 10) {
 		positionChangeY = 0.01;
 	} else {
 		positionChangeY -= 0.01;
