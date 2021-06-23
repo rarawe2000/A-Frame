@@ -40,6 +40,15 @@ function spin(){
 	myOtherBox.object3D.rotation.x -= rotationSpeed;
 	myOtherBox.object3D.rotation.y -= rotationSpeed;
 	myOtherBox.object3D.rotation.z -= rotationSpeed;
+
+	if (myOtherBox.object3D.rotation.x <= -15) {
+		rotationSpeed = 0.4;
+	}
+
+	if (myOtherBox.object3D.rotation.x <= -30) {
+		rotationSpeed = 0.01;
+	}
+
 	console.log(myOtherBox.object3D.rotation.x);
 }
 
