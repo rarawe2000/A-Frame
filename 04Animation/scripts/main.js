@@ -82,8 +82,10 @@ function spin(){
 
 	if (myOtherBox.object3D.position.y >= -3 && myOtherBox.object3D.position.y <= 10) {
 		positionChangeY = 0.01;
-	} else {
-		positionChangeY -= 0.01;
+	} 
+
+	if (myOtherBox.object3D.position.y == 9.99) {
+		positionChangeY -= 9.99;
 	}
 
 	console.log(myOtherBox.object3D.rotation.x);
