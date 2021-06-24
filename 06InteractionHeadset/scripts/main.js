@@ -37,7 +37,18 @@ function grow(){
 	//console.log(myOtherBox.object3D.scale);
 }
 
+function shrink(){
+	myOtherBox.object3D.scale.x /= growspeed;
+	myOtherBox.object3D.scale.y /= growspeed;
+	myOtherBox.object3D.scale.z /= growspeed;
+}
+
 myOtherBox.addEventListener('click', function(){ // uses a fuse
 	grow();
 	console.log('grew');
+	shrink();
+	console.log('shrink');
 });
+
+
+
