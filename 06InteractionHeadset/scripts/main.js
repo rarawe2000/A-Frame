@@ -46,12 +46,13 @@ function shrink(){
 myOtherBox.addEventListener('click', function(){ // uses a fuse
 	shrink();
 	console.log('shrink');
+	setTimeout(function() {
+	  grow();
+	  console.log('grow');
+	}, 2000);
 });
 
-setTimeout(function() {
-  grow();
-  console.log('grow');
-}, 2000);
+
 
 
 
